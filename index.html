@@ -10,7 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <link rel="icon" href="img/laptop-coding.png" sizes="20x20">
     <title>Coder World</title>
+    
+
+    <style>
+        #ap{
+            position: relative;
+            top: -2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,13 +28,13 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffefef">
-        <a class="navbar-brand" href="index.html"><img src="img/laptop-coding.png" width="45px"
-                height="40px" alt="Coder.com" loading="lazy">
-            <b style="font-size: 17px;
-            font-family: serif;
-            letter-spacing: 2px;">Coder.com</b>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+            
+              <a class="navbar-brand" href="index.html">
+                <img src="img/laptop-coding.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                 Coder World
+              </a>    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -158,6 +167,8 @@
                         <a class="dropdown-item"
                             href="https://www.youtube.com/watch?v=ulxP_9kqI8U&list=PLKKfKV1b9e8qBh_LG02V8R8qGRQjloeBj">C++
                             + DS + Algorithms</a>
+                        <a class="dropdown-item"
+                            href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi">DSA by Harry</a>
 
 
                     </div>
@@ -261,35 +272,56 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin:8px">Search</button>
 
 
-                <!--Log In Modal-->
-                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal"
-                    style="margin:8px">Log in
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal5"
+                style="margin:8px">Log In
+                <!-- Button trigger modal -->
 
-                    <!-- Button trigger modal -->
+            </button>
 
-                </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background: rgb(238,174,202);
+                    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(84, 161, 255, 0.541) 100%);">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group" style="width: 311px;">
+                                    <label for="inputEmailid">Email</label>
+                                    <input type="email" class="form-control" id="inputEmailid" style="width: 311px;">
+                                </div>
+                                <br>
+                                <div class="form-group" style="width: 311px;">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        style="width: 311px;">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Remember me on this device
+                                        </label>
+                                    </div>
+                                </div>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                Log in Modal
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Log In</button>
+                            <input class="btn btn-primary" type="reset" value="Reset">
                         </div>
                     </div>
                 </div>
+            </div>
 
                 <!--Sign In Modal-->
 
@@ -303,7 +335,8 @@
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content" style="background-color: aliceblue;">
+                        <div class="modal-content" style="background: rgb(238,174,202);
+                        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(84,162,255,0.6870098381149334) 100%);">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -384,21 +417,13 @@
                                         <input type="password" class="form-control" id="inputAddress"
                                             style="width: 311px;">
                                     </div>
-                                    <br>
-                                    <div class="form-group">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                                            <label class="form-check-label" for="gridCheck">
-                                                Remember me on this device
-                                            </label>
-                                        </div>
-                                    </div>
+                                    
 
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Sign Up</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-success">Sign Up</button>
                                 <input class="btn btn-primary" type="reset" value="Reset">
                             </div>
                         </div>
